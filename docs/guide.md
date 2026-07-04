@@ -1,4 +1,4 @@
-# hh-ui — User Guide
+# hackhub-ui — User Guide
 
 ## Table of contents
 
@@ -24,14 +24,14 @@
 mkdir my-mod  &&  cd my-mod
 npm init -y
 npm install -D @hotbunny/hackhub-content-sdk esbuild tsx typescript
-npm install -D github:Golden-Pigeon/hh-ui
+npm install -D github:Golden-Pigeon/hackhub-ui
 ```
 
 ### Minimal esbuild config
 
 ```ts
 // esbuild.config.ts
-import { buildMod } from "hh-ui/build";
+import { buildMod } from "hackhub-ui/build";
 buildMod();
 ```
 
@@ -51,7 +51,7 @@ render(h(App), document.getElementById("root")!);
 my-mod/
 ├── manifest.json              # HackHub manifest
 ├── tsconfig.json
-├── esbuild.config.ts          # import { buildMod } from "hh-ui/build"; buildMod();
+├── esbuild.config.ts          # import { buildMod } from "hackhub-ui/build"; buildMod();
 ├── src/
 │   ├── index.ts               # @RegisterModPackage Bootstrap
 │   ├── styles.ts              # export const APP_CSS = `…`;
@@ -212,7 +212,7 @@ happening under the hood.
 
 1. **App.Exports lose mod identity** — if an `App.Exports` function calls
    `Files.*`, the SDK sees mod `"null"` and denies filesystem permission.
-   All SDK calls in hh-ui go through `window.HackhubSDK` global directly.
+   All SDK calls in hackhub-ui go through `window.HackhubSDK` global directly.
 
 2. **`Files.write(id)` doesn't persist** — `sdk.files.save()` uses
    `remove(id) + create()` instead.

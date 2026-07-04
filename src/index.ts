@@ -1,5 +1,5 @@
 /**
- * hh-ui — A lightweight VDOM framework for HackHub mod development.
+ * hackhub-ui — A lightweight VDOM framework for HackHub mod development.
  *
  * @example Function component (JSX + hooks):
  *   import { h, useState, render } from "hh-ui";

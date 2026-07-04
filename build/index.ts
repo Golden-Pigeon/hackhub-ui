@@ -84,7 +84,7 @@ function generateAppsModule(apps: { entry: AppEntry; html: string }[]): string {
       `    DefaultSize = ${JSON.stringify(entry.size)};`,
       `    Unlocked = ${JSON.stringify(entry.unlocked)};`,
       `    Store = { title: ${JSON.stringify(entry.title)}, ratings: 5,`,
-      `              description: "Built with hh-ui." };`,
+      `              description: "Built with hackhub-ui." };`,
       `}`, "",
     );
   });
@@ -107,7 +107,7 @@ async function loadCSS(root: string): Promise<string> {
 
 export async function buildMod(root?: string) {
   root = root ?? process.cwd();
-  const tag = "\x1b[36m[hh-ui]\x1b[0m";
+  const tag = "\x1b[36m[hackhub-ui]\x1b[0m";
 
   // 1. Discover
   const apps = discoverApps(root);

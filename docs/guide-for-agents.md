@@ -1,15 +1,15 @@
-# AGENTS.md — hh-ui framework reference for AI coding agents
+# AGENTS.md — hackhub-ui framework reference for AI coding agents
 
 ## Project identity
 
-hh-ui is a standalone virtual-DOM framework for HackHub Content SDK mod
-development.  Mod projects consume it via `"hh-ui": "github:Golden-Pigeon/hh-ui"` in
+hackhub-ui is a standalone virtual-DOM framework for HackHub Content SDK mod
+development.  Mod projects consume it via `"hh-ui": "github:Golden-Pigeon/hackhub-ui"` in
 their `package.json`.
 
 ## Directory map
 
 ```
-hh-ui/
+hackhub-ui/
 ├── src/                     # runtime code (bundled into mods)
 │   ├── index.ts             # public API barrel
 │   ├── vdom/
@@ -52,7 +52,7 @@ hh-ui/
 
 ## Mod project conventions
 
-A mod consuming hh-ui MUST have:
+A mod consuming hackhub-ui MUST have:
 
 | file                        | purpose                                           |
 |-----------------------------|---------------------------------------------------|
@@ -62,7 +62,7 @@ A mod consuming hh-ui MUST have:
 | `src/apps/<Name>/app.ts`    | iframe entry: `render(h(App), root)`              |
 | `src/apps/<Name>/App.tsx`   | root component                                    |
 | `manifest.json`             | standard HackHub manifest                         |
-| `esbuild.config.ts`         | `import { buildMod } from "hh-ui/build"; buildMod();` |
+| `esbuild.config.ts`         | `import { buildMod } from "hackhub-ui/build"; buildMod();` |
 | `public/assets/`            | static assets (icons, covers)                     |
 
 ## VDOM internals

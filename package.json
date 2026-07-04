@@ -1,5 +1,5 @@
 {
-  "name": "hh-ui",
+  "name": "hackhub-ui",
   "version": "0.1.0",
   "private": false,
   "description": "A lightweight JSX VDOM framework for HackHub mod development.",
@@ -9,8 +9,7 @@
     "./build": "./build/index.ts"
   },
   "scripts": {
-    "build": "tsc --noEmit",
-    "prepublishOnly": "tsc --noEmit"
+    "build": "tsc --noEmit"
   },
   "files": [
     "src",

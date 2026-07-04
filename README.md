@@ -1,4 +1,4 @@
-# hh-ui
+# hackhub-ui
 
 Lightweight JSX virtual-DOM framework for
 [HackHub](https://store.steampowered.com/app/2980270/) mod development.
@@ -8,13 +8,13 @@ Content SDK pitfall internally.
 ## Install
 
 ```bash
-npm install -D github:Golden-Pigeon/hh-ui
+npm install -D github:Golden-Pigeon/hackhub-ui
 ```
 
 Or in `package.json`:
 
 ```json
-"devDependencies": { "hh-ui": "github:Golden-Pigeon/hh-ui" }
+"devDependencies": { "hh-ui": "github:Golden-Pigeon/hackhub-ui" }
 ```
 
 Peer deps: `@hotbunny/hackhub-content-sdk`, `esbuild`, `tsx`, `typescript`.
