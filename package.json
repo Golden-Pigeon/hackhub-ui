@@ -1,0 +1,25 @@
+{
+  "name": "hh-ui",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A lightweight JSX VDOM framework for HackHub mod development.",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./build": "./build/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@hotbunny/hackhub-content-sdk": "latest",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@hotbunny/hackhub-content-sdk": "*",
+    "esbuild": "^0.25.0"
+  },
+  "keywords": ["hackhub", "modding", "vdom", "hhui"],
+  "license": "MIT"
+}
