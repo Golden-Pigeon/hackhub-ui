@@ -1,6 +1,6 @@
 {
   "name": "hackhub-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "A lightweight JSX VDOM framework for HackHub mod development.",
   "main": "src/index.ts",
@@ -34,6 +34,11 @@
     "@hotbunny/hackhub-content-sdk": "*",
     "esbuild": "^0.25.0"
   },
-  "keywords": ["hackhub", "modding", "vdom", "hhui"],
+  "keywords": [
+    "hackhub",
+    "modding",
+    "vdom",
+    "hhui"
+  ],
   "license": "MIT"
 }
