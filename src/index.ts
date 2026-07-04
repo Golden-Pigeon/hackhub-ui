@@ -2,12 +2,12 @@
  * hackhub-ui — A lightweight VDOM framework for HackHub mod development.
  *
  * @example Function component (JSX + hooks):
- *   import { h, useState, render } from "hh-ui";
+ *   import { h, useState, render } from "hackhub-ui";
  *   const App = () => { const [n, setN] = useState(0); return <div onClick={() => setN(n+1)}>{n}</div>; };
  *   render(<App/>, document.getElementById("root")!);
  *
  * @example Class component (OOP):
- *   import { Component } from "hh-ui";
+ *   import { Component } from "hackhub-ui";
  *   class App extends Component<{}, { n: number }> {
  *     initialState() { return { n: 0 }; }
  *     render() { return <div onClick={() => this.setState({ n: this.state.n + 1 })}>{this.state.n}</div>; }

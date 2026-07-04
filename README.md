@@ -23,14 +23,14 @@ Peer deps: `@hotbunny/hackhub-content-sdk`, `esbuild`, `tsx`, `typescript`.
 
 ```tsx
 // src/apps/MyApp/app.ts
-import { h, render } from "hh-ui";
+import { h, render } from "hackhub-ui";
 const App = () => <div>Hello HackHub</div>;
 render(<App/>, document.getElementById("root")!);
 ```
 
 ```ts
 // esbuild.config.ts
-import { buildMod } from "hh-ui/build";
+import { buildMod } from "hackhub-ui/build";
 buildMod();
 ```
 

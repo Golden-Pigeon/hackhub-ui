@@ -39,7 +39,7 @@ buildMod();
 
 ```ts
 // src/apps/MyApp/app.ts
-import { h, render } from "hh-ui";
+import { h, render } from "hackhub-ui";
 import { App } from "./App";
 
 render(h(App), document.getElementById("root")!);
@@ -72,7 +72,7 @@ my-mod/
 ### Function components + hooks
 
 ```tsx
-import { h, useState, useEffect } from "hh-ui";
+import { h, useState, useEffect } from "hackhub-ui";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -89,7 +89,7 @@ const Counter = () => {
 ### Class components (OOP)
 
 ```tsx
-import { Component } from "hh-ui";
+import { Component } from "hackhub-ui";
 
 class Counter extends Component<{}, { count: number }> {
   initialState() { return { count: 0 }; }
@@ -143,7 +143,7 @@ abstract class Component<P = {}, S = {}> {
 ## SDK wrapper
 
 ```ts
-import { sdk } from "hh-ui";
+import { sdk } from "hackhub-ui";
 ```
 
 ### Files
