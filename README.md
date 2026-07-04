@@ -8,13 +8,13 @@ Content SDK pitfall internally.
 ## Install
 
 ```bash
-npm install -D ../path/to/hh-ui
+npm install -D github:Golden-Pigeon/hh-ui
 ```
 
 Or in `package.json`:
 
 ```json
-"devDependencies": { "hh-ui": "file:../hh-ui" }
+"devDependencies": { "hh-ui": "github:Golden-Pigeon/hh-ui" }
 ```
 
 Peer deps: `@hotbunny/hackhub-content-sdk`, `esbuild`, `tsx`, `typescript`.

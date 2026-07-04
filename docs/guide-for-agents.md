@@ -3,7 +3,7 @@
 ## Project identity
 
 hh-ui is a standalone virtual-DOM framework for HackHub Content SDK mod
-development.  Mod projects consume it via `"hh-ui": "file:../hh-ui"` in
+development.  Mod projects consume it via `"hh-ui": "github:Golden-Pigeon/hh-ui"` in
 their `package.json`.
 
 ## Directory map

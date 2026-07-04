@@ -24,7 +24,7 @@
 mkdir my-mod  &&  cd my-mod
 npm init -y
 npm install -D @hotbunny/hackhub-content-sdk esbuild tsx typescript
-npm install -D ../path/to/hh-ui         # or "hh-ui": "file:../hh-ui" in package.json
+npm install -D github:Golden-Pigeon/hh-ui
 ```
 
 ### Minimal esbuild config
