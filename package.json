@@ -9,7 +9,22 @@
     "./build": "./build/index.ts"
   },
   "scripts": {
-    "build": "tsc --noEmit"
+    "build": "tsc --noEmit",
+    "prepublishOnly": "tsc --noEmit"
+  },
+  "files": [
+    "src",
+    "build",
+    "docs",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Golden-Pigeon/hh-ui"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@hotbunny/hackhub-content-sdk": "latest",
