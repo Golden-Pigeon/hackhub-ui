@@ -1,6 +1,6 @@
 {
   "name": "hackhub-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "A lightweight JSX VDOM framework for HackHub mod development.",
   "main": "src/index.ts",
